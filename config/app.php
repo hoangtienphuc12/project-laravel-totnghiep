@@ -161,6 +161,8 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        // 'Input' => Illuminate\Support\Facades\Request::class,
+
 
         /*
          * Package Service Providers...

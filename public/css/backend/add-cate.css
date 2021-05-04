@@ -1,0 +1,28 @@
+
+.panel{  
+    padding: 0 15% 0% 15%;
+
+}
+.panel .panel-heading{
+    padding: 16px;
+    text-align: center;
+    font-size: 22px;
+    background-color: cadetblue;
+}
+.panel .panel-body{
+    font-size: larger;
+    padding: 15px;
+    background-color: #E6E6E6;
+}
+.panel .panel-body .form-group .cate-name{
+    border-bottom: solid 1px red;
+    margin-top: 1%;
+    width: 100%;
+    margin-left: 1%;
+}
+.panel .panel-body .form-group .cate-name .img{
+    width: 10%;
+}
+.panel .panel-body .form-group .cate-name .btn{
+
+}

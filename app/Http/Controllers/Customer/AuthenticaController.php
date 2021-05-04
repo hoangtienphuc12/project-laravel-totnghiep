@@ -71,4 +71,6 @@ class AuthenticaController extends Controller
         Auth::logout();
         return redirect('/home');
     }
+    //admin_login
+   
 }

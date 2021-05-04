@@ -31,13 +31,14 @@ img{max-width:100%;}
 /*-- Reset Code --*/
 
 /*-- Index-Page-Styling --*/
-
-body {
+body .content {
 background: url("../images/bg.jpg");
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: center;
 background-size: cover;
+}
+body {
 font-family: 'Open Sans', sans-serif;
 }
 body a {   
@@ -70,6 +71,8 @@ padding: 20px;
 background-color: #FFF;
 margin: 0 auto;
 border-radius: 5px;
+border: ridge;
+
 }
 
 h2 {

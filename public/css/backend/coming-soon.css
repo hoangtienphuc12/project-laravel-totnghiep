@@ -1,0 +1,83 @@
+.content{
+    background: url('../../images/bg.jpg') !important; 
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-size: cover !important; 
+    width: 100% !important;
+    height: 100%;
+    z-index: 999999999 !important;
+}
+.top{
+    width: 100%;
+    /* padding: 50px; */
+    display: flex;
+    justify-content: space-between;
+    margin:30px 0;
+    padding: 0 20px;
+}
+.top .title{
+    font-family: fangsong;
+    font-weight: bold;
+    /* width: 60%; */
+    font-size: 40px;
+}
+.top .button-add{
+    background-color: #0069D9;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    align-self: center;
+    border-radius: 5px;
+}
+.top .title.button i{}
+.top .title.button span{}
+.top .btn .btn-addmovie{
+    width: 12%;
+    font-size: 20px;
+    font-family: cursive;
+    background-color: teal;
+    margin-left: auto;
+}
+.mid{
+    width: 100%;
+    padding: 0 20px;
+    
+}
+.mid .table{
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+.top .modal{
+    background: url('../../images/bg.jpg') !important; 
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-size: cover !important; 
+    width: 100% !important;
+    height: 100%;
+    z-index: 999999999 !important;
+}
+.top .modal .modal-content .modal-header{
+    background-color: #CBEEEF;
+}
+
+.top .modal .modal-content .modal-body{
+    background-color: #F1F1F1;
+    
+}
+.top .modal .modal-content .modal-footer{
+    /* background-color: #CBEEEF; */
+}
+.top .modal .modal-content{
+    /* background-color: #FABB7D; */
+}
+.top .modal .modal-content .modal-body .parent{
+    display: flex;
+    justify-content: center;
+}
+.top .modal .modal-content .modal-body .parent .form-group{
+    width: 49%;
+}

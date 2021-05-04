@@ -2,52 +2,46 @@ html,body{
     width: 100%;
     height: 100%;
 }
-.poster{
-    height: 30%;
-    width: 100%;
-}
-.poster img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.header{
+  background-color: #577257;
+  display: flex;
+  width: 100%;
 }
 .user{
-  position: absolute;
   top: 10px;
   display: flex;
   right: 5%;
-  
+  width: 12%; 
+  justify-content: space-between; 
+  font-weight: 600;
+}
+.user .register a:hover{
+  background-color: gray;
+} 
+.user .login a:hover{ 
+    background-color: gray;
 }
 .logo{
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    height: 15%;
-    margin-left: 8%;
-
+  margin-left: 20px;
+    width: 10%;
+    height: 65px;
 }
 .logo img{
     height: 100%;
 }
-.ke{
-    width: 100%;
-    height: 1px;
-    background-color: brown;
-    opacity: 0.4;
-}
 .nav{
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: space-evenly;
     height: 65px;
     align-items: center;
-    background-color: #577257;
+
 }
 .dropbtn {
-    background-color: #577257;
-    color: white;
+  font-weight: 500;
+  background-color: #577257;
     padding: 16px;
-    font-size: 16px;
+    font-size: 18px;
     border: none;
     cursor: pointer;
   }
@@ -87,19 +81,16 @@ html,body{
   }
   .slide{
     margin: 0;
-    margin-top: 1%;
-    height: 537px;
+    height: 550px;
     width: 100%;
     display: flex;
     justify-content: center;
   }
   .container-fluid.p-10{
-    padding-right: 2px;
-    padding-left: 2px;
+    padding-right: 1px;
+    padding-left: 1px;
   }
-  .slide .container-fluid{
-    width: 75%;
-  }
+
   .bg_slide{
     width: 15%;
   }
@@ -152,9 +143,14 @@ body {
 .owl-carousel {
     margin-bottom: 15px
 }
+.home-title .card-title{
+  font-size: 18px;
+  text-transform: inherit;
+  font-weight: 700;
+  line-height: 1.5;
+}
 .home-title{
   justify-content: center;
-  display: flex;
 }
 footer .footer-top{
   padding: 5px 0;
