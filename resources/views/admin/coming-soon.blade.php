@@ -222,13 +222,7 @@
                                 <td>{{ $movie->movie_name }}</td>
                                 <td>{{ $movie->movie_directors }}</td>
                                 <td>{{ $movie->movie_time }}</td>
-                                <td>
-                                    @if{{ $movie->movie_status == '1' }}
-                                    Đang Chiếu
-                                    @else
-                                    Sắp Chiếu
-                                    
-                                @endif</td>
+                                <td>{{ $movie->movie_status}}</td>
                                 <td>{{ $movie->movie_language }}</td>
                                 <td>{{ $movie->movie_releasetime }}</td>
                                 <td>{{ $movie->category_name }}</td>

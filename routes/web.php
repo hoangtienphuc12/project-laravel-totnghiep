@@ -34,9 +34,6 @@ Route::post('/register', 'Customer\AuthenticaController@register');
 Route::prefix('admin')->group(function () {
     Route::resource('tickets', "Resources\TicketController");
 });
-Route::get('/detail', function(){
-    return view('detail-movie');
-});
 Route::get('/admin/index', 'Admin\AdminController@getMovieItems'
 );
 Route::get('admin/add-cate-movies', 'Admin\AdminController@getAddMovieCategories');
@@ -91,4 +88,9 @@ Route::get('admin/combo','Admin\Admincontroller@getCombo'
 );
 Route::post('admin/combo','Admin\AdminController@postCombo'
 );
-Route::get('admin/delete-combo{id}','Admin\AdminController@getDeletecombo');
+Route::get('admin/delete-combo/{id}','Admin\AdminController@getDeletecombo');
+//phim
+Route::get('/coming-soon','layoutController@phimsapchieu');
+Route::get('/showing','layoutController@phimdangchieu');
+// Route::get('/detail-movie/{id}','layoutController@chitietphim');
+Route::get('/movie-detail/{id}','layoutController@chitietphim');

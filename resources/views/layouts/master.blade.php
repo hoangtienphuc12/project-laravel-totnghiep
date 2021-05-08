@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/products.css">
+    <link rel="stylesheet" href="./css/color1.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <!-- Bootstrap CSS -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
@@ -27,14 +30,14 @@
 <body>
     <div class="header">
         <div class="logo">
-            <img src="./images/logo2.png">
+            <a href="{{ asset('/home') }}"><img src="./images/logo2.png"></a>
         </div>
         <div class="nav">
             <div class="dropdown">
                 <button class="dropbtn">PHIM</button>
                 <div class="dropdown-content">
-                    <a href="#">SẮP CHIẾU</a>
-                    <a href="#">ĐANG CHIẾU</a>
+                    <a href="{{ asset('/coming-soon') }}">SẮP CHIẾU</a>
+                    <a href="{{ asset('/showing') }}">ĐANG CHIẾU</a>
                     <a href="#">XEM NHIỀU</a>
                 </div>
             </div>
@@ -78,75 +81,6 @@
                         </a>
                     </div>
                     <span class="text-white">|</span>
-                    {{-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                    Thêm Phim
-                </button>
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog" role=" document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title"> REGISTER</h5>
-    
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <section class="panel">
-                                    <div class="panel-body">
-    
-                                        <div class="position-center">
-                                            <div class="container-fluid">
-                                                
-                                                    <div class="container-fluid">
-                                                        <form action="/register" method="post">
-                                                            @csrf
-                                                            <div class="s-register">
-                                                                @include('layouts.message')
-                                                                <h3>Register</h3>
-                                                                <div class="row">
-                                                                    <div class="w-25"><label for="">User Name</label></div>
-                                                                    <div class="w-75"><input type="text" class="form-control"
-                                                                            name="name" required placeholder="User Name"></div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="w-25"><label for="">Email</label></div>
-                                                                    <div class="w-75"><input type="text" class="form-control"
-                                                                            name="email" required placeholder="Your Email">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="w-25"><label for="">Password</label></div>
-                                                                    <div class="w-75"><input type="password"
-                                                                            class="form-control" name="password" required
-                                                                            placeholder="Password"></div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="w-25"><label for="">Confirm Passowrd</label>
-                                                                    </div>
-                                                                    <div class="w-75"><input type="password"
-                                                                            class="form-control" name="confirm_password"
-                                                                            required placeholder="Password 2"></div>
-                                                                </div>
-                                                                <div class="row text-center">
-                                                                    <button type="submit" class="btn btn-primary">Dang
-                                                                        Ky</button>
-                                                                </div>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                               
-                                            </div>
-                                        </div>
-    
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
-    
                     <div class="register">
                         <a href="/register" style="color: #fff;text-decoration: none;" >
                             <span>
@@ -162,7 +96,7 @@
     @yield('content')
     <footer class="footer">
         <div class="footer-top">
-            <img src="{{ asset('images/brand-footer.png') }}">
+            <img src="{{ asset('images/brand-footer.png') }}" style="width: 100%">
         </div>
         <div class="footer-mid">
             <div class="child-s1  child">

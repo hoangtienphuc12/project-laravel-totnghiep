@@ -114,7 +114,7 @@
                                                         <td>{{ $combo->gia }}</td>
                                                         <td>{{ $combo->created_at }}</td>
                                                         <td>
-                                                            <a href="{{ asset('admin/delete-combo/' .$combo->id) }}"
+                                                            <a href="{{ asset('admin/delete-combo/'.$combo->id) }}"
                                                                 onclick="return confirm('Bạn có chắc chắn muốn xóa?')" class="btn btn-danger">
                                                                 <span class="glyphicon glyphicon-trash"></span> Xóa</a>
                                                         </td>                                             
